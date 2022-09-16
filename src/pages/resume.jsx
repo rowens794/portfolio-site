@@ -55,10 +55,10 @@ export default function Home() {
             location="Charleston, WV"
             dates={['Jun 2021 - Present']}
             bullets={[
-              'Built and launched a React/Express/MongoDB software product targeting sales teams that service non-profit clients',
-              'Built a data aggregation pipeline covering 1.7 million non-profit organizations to facilitate regular database/product updates',
-              'Grew the product to ~25k monthly visitor, thousands of free users, and dozens of paying customers',
-              'Direct exposure to SEO optimization, digital marketing, and sales',
+              'Launched a SaaS product to help service providers identify nonprofits customers',
+              'Built a data aggregation pipeline using Node.js/Express to automate monthly collection, parsing, cleaning and storage of data on 1.7 million nonprofit organizations to MongoDB & AWS S3 ',
+              'Built a React/Next.js frontend to allow users to run sophisticated queries and research organizations in our database',
+              'Grew the product to ~25k monthly visitor, thousands of registered users, generating $50k+ in revenue',
             ]}
           />
 
