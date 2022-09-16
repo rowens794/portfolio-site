@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ryan Owens - Web Developer</title>
+        <title>Ryan XXXXXXXX - Web Developer</title>
         <meta
           name="description"
           content="I’m Ryan, a software developer based in Charleston, WV."

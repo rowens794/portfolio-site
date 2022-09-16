@@ -17,7 +17,7 @@ function ArrowDownIcon(props) {
 
 export function DownloadCV() {
   const downloadResume = () => {
-    fetch('/resume.pdf')
+    fetch('/anon-resume.pdf')
       .then((resp) => resp.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(blob)
@@ -25,7 +25,7 @@ export function DownloadCV() {
         a.style.display = 'none'
         a.href = url
         // the filename you want
-        a.download = 'Ryan Owens Resume.pdf'
+        a.download = 'Resume.pdf'
         document.body.appendChild(a)
         a.click()
         window.URL.revokeObjectURL(url)

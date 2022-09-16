@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import { jsPDF } from 'jspdf'
 
 import { Container } from '@/components/Container'
 
 export default function Home() {
   const downloadResume = () => {
-    fetch('/resume.pdf')
+    fetch('/anon-resume.pdf')
       .then((resp) => resp.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(blob)
@@ -13,7 +12,7 @@ export default function Home() {
         a.style.display = 'none'
         a.href = url
         // the filename you want
-        a.download = 'Ryan Owens Resume.pdf'
+        a.download = 'Resume.pdf'
         document.body.appendChild(a)
         a.click()
         window.URL.revokeObjectURL(url)
@@ -24,8 +23,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ryan Owens - Resume</title>
-        <meta name="description" content="Ryan Owens - Resume" />
+        <title>Ryan XXXX - Resume</title>
+        <meta name="description" content="Ryan XXXXX - Resume" />
       </Head>
 
       <Container className="relative mt-12 print:mt-0" id="resume">
@@ -37,15 +36,15 @@ export default function Home() {
             Save PDF
           </button>
           <h1 className="text-center text-3xl text-slate-800 dark:text-slate-300 print:mb-1 print:text-2xl">
-            Ryan Owens
+            Ryan XXXXX
           </h1>
           <span className="block text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
-            4204 Staunton Ave Charleston, WV
+            XXX XXXXXX XXX XXXXXX, XX
           </span>
           <div className="text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
-            <span>(304) 231-7428</span>
+            <span>(XXX) XXX-XXXX</span>
             <span className="mx-2">|</span>
-            <span>rowens794@gmail.com</span>
+            <span>XXXXXXXX@gmail.com</span>
           </div>
 
           <SectionHeading title="Professional Experience" />
