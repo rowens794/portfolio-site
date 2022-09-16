@@ -53,7 +53,7 @@ export default function Home() {
             company="Intellispect"
             link="https://www.intellispect.co"
             location="Charleston, WV"
-            dates={['Jun 2021 - Present']}
+            dates={['Jun 2020 - Present']}
             bullets={[
               'Launched a SaaS product to help service providers identify nonprofits customers',
               'Built a data aggregation pipeline using Node.js/Express to automate monthly collection, parsing, cleaning and storage of data on 1.7 million nonprofit organizations to MongoDB & AWS S3 ',
