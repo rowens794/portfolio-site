@@ -69,7 +69,7 @@ export default function Home() {
             dates={['Sep 2016 – Jun 2020']}
             bullets={[
               'Delivered managed investment services for large foundation and endowment clients',
-              'Built and maintained VBA application to fetch and analyze client investment allocations',
+              'Built and maintained VBA application to query trust accounting system and analyze client investment allocations',
               'Developed internal tooling to automate and streamline outside investment manager vetting process',
               'Oversaw nearly $1B in client assets across ~40 client relationships',
             ]}
@@ -89,7 +89,7 @@ export default function Home() {
               'Jun 2010 – Oct 2012',
             ]}
             bullets={[
-              'Developed and implemented monte carlo simulation model to evaluate and establish division wide investment allocations',
+              'Developed monte carlo simulation model to evaluate and establish division wide investment allocations',
               'Developed automated tooling to analyze every asset held in the division to identify and flag at-risk assets to be sold',
               'Managed a team of ~10 investment analysts and portfolio managers',
               'Had primary responsibility ~$1.5B in client assets across ~750 HNW & institutional relationships',
