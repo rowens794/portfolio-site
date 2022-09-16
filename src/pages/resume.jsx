@@ -4,7 +4,22 @@ import { jsPDF } from 'jspdf'
 import { Container } from '@/components/Container'
 
 export default function Home() {
-  const save = () => {}
+  const downloadResume = () => {
+    fetch('/resume.pdf')
+      .then((resp) => resp.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.style.display = 'none'
+        a.href = url
+        // the filename you want
+        a.download = 'Ryan Owens Resume.pdf'
+        document.body.appendChild(a)
+        a.click()
+        window.URL.revokeObjectURL(url)
+      })
+      .catch(() => alert('There was an error downloading the resume.'))
+  }
 
   return (
     <>
@@ -16,7 +31,7 @@ export default function Home() {
       <Container className="relative mt-12 print:mt-0" id="resume">
         <div className="relative">
           <button
-            onClick={() => save()}
+            onClick={() => downloadResume()}
             className="absolute top-0 right-0 hidden rounded-full bg-slate-600 px-3 py-0.5 text-sm text-slate-100 hover:bg-slate-700 print:hidden sm:block"
           >
             Save PDF
@@ -261,15 +276,15 @@ const EducationLine = ({ school, degree, dates }) => {
 
 const SkillsList = ({ title, skills }) => {
   return (
-    <div className=" mb-2 w-full flex-row text-slate-800 dark:text-slate-300 print:flex print:text-base print:leading-4 sm:mb-0 sm:flex">
-      <span className="mr-2 w-28 shrink-0 whitespace-nowrap text-sm font-bold print:text-base sm:text-base">
+    <div className=" mb-2 w-full flex-row text-slate-800 dark:text-slate-300 print:flex print:text-base sm:mb-0 sm:flex">
+      <span className="mr-2 w-28 shrink-0 whitespace-nowrap text-sm font-bold print:text-sm  sm:text-base">
         {title}:
       </span>
       <div className="flex flex-wrap">
         {skills.map((item, i) => {
           return (
             <span
-              className="mr-1 whitespace-nowrap text-sm font-normal print:mr-2  print:text-base sm:mr-2 sm:text-base"
+              className="mr-1 whitespace-nowrap text-sm font-normal print:mr-2 sm:mr-2 sm:text-base"
               key={i}
             >
               {item}

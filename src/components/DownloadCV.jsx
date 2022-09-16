@@ -16,11 +16,28 @@ function ArrowDownIcon(props) {
 }
 
 export function DownloadCV() {
+  const downloadResume = () => {
+    fetch('/resume.pdf')
+      .then((resp) => resp.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.style.display = 'none'
+        a.href = url
+        // the filename you want
+        a.download = 'Ryan Owens Resume.pdf'
+        document.body.appendChild(a)
+        a.click()
+        window.URL.revokeObjectURL(url)
+      })
+      .catch(() => alert('There was an error downloading the resume.'))
+  }
+
   return (
     <Button
-      href="#"
       variant="secondary"
       className="group mt-6 w-full border border-zinc-200 dark:border-zinc-700/40"
+      onClick={downloadResume}
     >
       Download Resume
       <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
