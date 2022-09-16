@@ -229,7 +229,7 @@ const Intellispect = () => {
             rel="noreferrer"
             className="mb-4 cursor-pointer text-left text-sm font-medium text-slate-900 hover:underline dark:text-slate-100 xl:text-right"
           >
-            www.intellispect.com
+            www.intellispect.co
           </a>
           <div className="relative z-20 rounded-md text-slate-900 dark:text-white xl:w-[125%] xl:-translate-x-[20%] xl:bg-slate-700 xl:p-4 xl:text-white">
             <p>
