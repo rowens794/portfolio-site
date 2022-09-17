@@ -36,98 +36,25 @@ export default function Home() {
           >
             Save PDF
           </button>
-          <h1 className="text-center text-3xl text-slate-800 dark:text-slate-300 print:mb-1 print:text-2xl">
+          <h1 className="text-center text-3xl text-slate-800 dark:text-slate-300 print:mb-2 print:text-2xl">
             Ryan Owens
           </h1>
-          <span className="block text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
-            4204 Staunton Ave Charleston, WV
-          </span>
+
+          <div className="text-center  text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
+            <span className=" text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
+              4204 Staunton Ave Charleston, WV
+            </span>
+            <span className="mx-2">|</span>
+            <span>
+              <a href="https://www.ryanjowens.com">www.ryanjowens.com</a>
+            </span>
+          </div>
+
           <div className="text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
             <span>(304) 231-7428</span>
             <span className="mx-2">|</span>
             <span>rowens794@gmail.com</span>
           </div>
-
-          <SectionHeading title="Professional Experience" />
-          <Position
-            titles={['Founder / Product Lead']}
-            company="Intellispect"
-            link="https://www.intellispect.co"
-            location="Charleston, WV"
-            dates={['Jun 2021 - Present']}
-            bullets={[
-              'Launched a SaaS product to help service providers identify nonprofits customers',
-              'Built a data aggregation pipeline using Node.js/Express to automate monthly collection, parsing, cleaning and storage of data on 1.7 million nonprofit organizations to MongoDB & AWS S3 ',
-              'Built a React/Next.js frontend to allow users to run sophisticated queries and research organizations in our database',
-              'Grew the product to ~25k monthly visitor, thousands of registered users, generating $50k+ in revenue',
-            ]}
-          />
-
-          <Position
-            titles={['SVP & Inst. Inv. Manager']}
-            company="BB&T (now Truist Bank)"
-            location="Charleston, WV"
-            dates={['Sep 2016 – Jun 2020']}
-            bullets={[
-              'Delivered managed investment services for large foundation and endowment clients',
-              'Built and maintained VBA application to fetch and analyze client investment allocations',
-              'Developed internal tooling to automate and streamline outside investment manager vetting process',
-              'Oversaw nearly $1B in client assets across ~40 client relationships',
-            ]}
-          />
-
-          <Position
-            titles={[
-              'VP & Dir. of Inv.',
-              'Portfolio Manager',
-              'Investment Analyst',
-            ]}
-            company="United Bank, Inc."
-            location="Charleston, WV"
-            dates={[
-              'Mar 2015 – Sep 2016',
-              'Oct 2012 – Mar 2015',
-              'Jun 2010 – Oct 2012',
-            ]}
-            bullets={[
-              'Developed and implemented monte carlo simulation model to evaluate and establish division wide investment allocations',
-              'Developed automated tooling to analyze every asset held in the division to identify and flag at-risk assets to be sold',
-              'Managed a team of ~10 investment analysts and portfolio managers',
-              'Had primary responsibility ~$1.5B in client assets across ~750 HNW & institutional relationships',
-            ]}
-          />
-
-          <Position
-            titles={['Grad. Teaching Ast.']}
-            company="West Virginia Univ."
-            location="Morgantown, WV"
-            dates={['Sep 2009 – Jun 2010']}
-            bullets={[
-              'Instructed a supplemental junior/senior level class on investment analysis and portfolio management',
-            ]}
-          />
-
-          <SectionHeading title="Education & Professional Designations" />
-          <EducationLine
-            school="CFA Charterholder"
-            degree="Pittsburgh Chapter Member"
-            dates="Jun 2014"
-          />
-          <EducationLine
-            school="West Virginia University"
-            degree="MSF Finance"
-            dates="Jun 2010"
-          />
-          <EducationLine
-            school="West Virginia University"
-            degree="BSBA Finance"
-            dates="Dec 2008"
-          />
-          <EducationLine
-            school="West Virginia University"
-            degree="BSBA Accounting"
-            dates="Dec 2008"
-          />
 
           <SectionHeading title="Skills / Competencies" />
           <SkillsList
@@ -142,6 +69,7 @@ export default function Home() {
               'MongoDB',
               'SQL',
               'AWS',
+              'Google Cloud',
               'Python',
               'TailwindCSS',
               'CSS',
@@ -161,6 +89,91 @@ export default function Home() {
               'Adobe Creative Suite',
             ]}
           />
+
+          <SectionHeading title="Development Experience" />
+          <Position
+            titles={['Founder / Full Stack Developer']}
+            company="Intellispect"
+            link="www.intellispect.co"
+            location="Charleston, WV"
+            dates={['Jun 2020 - Present']}
+            bullets={[
+              'Launched a SaaS product to help service providers identify nonprofits customers',
+              'Created a data aggregation pipeline with Node.js & Express to automate monthly collection, parsing, cleaning and storage of data for 1.7 million nonprofit organizations on MongoDB & AWS S3 ',
+              'Built React/Next.js frontend handling authentication, payment processing, and general application functionality',
+              'Grew the product to ~25k monthly visitors, thousands of registered users, generating $50k+ in revenue',
+            ]}
+          />
+
+          <SectionHeading title="Personal Projects" />
+          <Project
+            name="Zilch"
+            desc="Multi-player Online Dice Game"
+            link="www.dontzilch.com"
+            github="github.com/rowens794/zilch"
+            bullets={[
+              'Real-time multi-player dice game using React, Next.js, Node.js, Express, and SQL',
+              'Game allows up to 8 players on separate devices to play inside of a private game room',
+              'No user authentication is required to create or join a game',
+            ]}
+          />
+
+          <SectionHeading title="Other Professional Experience" />
+          <Position
+            titles={['SVP & Inst. Inv. Manager']}
+            company="BB&T (now Truist Bank)"
+            location="Charleston, WV"
+            dates={['Sep 2016 – Jun 2020']}
+            bullets={[
+              'Managed investment portfolios for nonprofit clients overseeing $750 million in assets',
+              'Built and maintained VBA application to fetch and analyze client investment allocations',
+              'Developed internal tooling to automate and streamline outside investment manager vetting process',
+            ]}
+          />
+
+          <Position
+            titles={['VP & Dir. of Inv.']}
+            company="United Bank, Inc."
+            location="Charleston, WV"
+            dates={['Jun 2010 – Sep 2016']}
+            bullets={[
+              'Coded VBA monte carlo simulation model to evaluate division wide investment allocations',
+              'Developed automated tooling to analyze and identify at-risk assets in the department',
+              'Managed a team of ~10 investment analysts and portfolio managers',
+            ]}
+          />
+
+          <Position
+            titles={['Grad. Teaching Ast.']}
+            company="West Virginia Univ."
+            location="Morgantown, WV"
+            dates={['Sep 2009 – Jun 2010']}
+            bullets={[
+              'Instructed a supplemental junior/senior level class on investment analysis and portfolio management',
+            ]}
+          />
+
+          <SectionHeading title="Education & Professional Designations" />
+          <EducationLine
+            school="West Virginia University"
+            degree="MS Finance"
+            dates="Jun 2010"
+          />
+          <EducationLine
+            school="West Virginia University"
+            degree="BSBA Finance"
+            dates="Dec 2008"
+          />
+          <EducationLine
+            school="West Virginia University"
+            degree="BSBA Accounting"
+            dates="Dec 2008"
+          />
+          <EducationLine
+            school="CFA Charterholder"
+            degree="Pittsburgh Chapter Member"
+            dates="Jun 2014"
+          />
         </div>
       </Container>
     </>
@@ -169,7 +182,7 @@ export default function Home() {
 
 const SectionHeading = ({ title }) => {
   return (
-    <div className="mt-8 mb-4 w-full border-b border-slate-900 dark:border-slate-200 print:mt-6 print:mb-2 ">
+    <div className="mt-8 mb-4 w-full border-b border-slate-900 dark:border-slate-200 print:mt-5 print:mb-1 ">
       <span className="Sept block text-base font-bold text-slate-900 dark:text-slate-300 print:text-base print:leading-5 sm:text-lg">
         {title}
       </span>
@@ -177,9 +190,42 @@ const SectionHeading = ({ title }) => {
   )
 }
 
+const Project = ({ name, desc, link, github, bullets }) => {
+  return (
+    <div className="mb-8 print:mb-3">
+      <ProjectHeading name={name} desc={desc} github={github} link={link} />
+      <PositionDescription bullets={bullets} />
+    </div>
+  )
+}
+
+const ProjectHeading = ({ name, desc, link, github }) => {
+  return (
+    <div className="flex justify-between">
+      <div>
+        <span className="block text-sm font-semibold text-slate-800 dark:text-slate-300 print:text-sm print:leading-4 sm:text-base">
+          {name}
+        </span>
+        <span className="block text-sm italic text-slate-800 dark:text-slate-300 print:text-sm print:leading-4 sm:text-base">
+          {desc}
+        </span>
+      </div>
+
+      <div>
+        <span className="block text-right text-xs text-slate-800 dark:text-slate-300 print:text-xs print:leading-4 sm:text-sm">
+          <a href={`https://${link}`}>{link}</a>
+        </span>
+        <span className="block text-right text-xs text-slate-800 dark:text-slate-300 print:text-xs print:leading-4 sm:text-sm">
+          <a href={`https://${link}`}>{github}</a>
+        </span>
+      </div>
+    </div>
+  )
+}
+
 const Position = ({ company, titles, link, location, dates, bullets }) => {
   return (
-    <div className="mb-8 print:mb-4">
+    <div className="mb-8 print:mb-3">
       <PositionHeading
         titles={titles}
         company={company}
@@ -209,7 +255,7 @@ const PositionHeading = ({ company, titles, link, location, dates }) => {
         ))}
         {link && (
           <span className="block text-sm italic text-slate-800 dark:text-slate-300 print:text-sm print:leading-4 sm:text-base">
-            <a href="https://www.intellispect.co">{link}</a>
+            <a href={`https://${link}`}>{link}</a>
           </span>
         )}
       </div>
@@ -252,7 +298,7 @@ const PositionDescription = ({ bullets }) => {
 
 const EducationLine = ({ school, degree, dates }) => {
   return (
-    <div className="mb-2 flex justify-between print:mb-0 print:text-sm print:leading-4 sm:mb-0">
+    <div className="mb-2 flex justify-between print:mb-0 print:text-sm print:leading-3 sm:mb-0">
       <div>
         <span className="block text-sm font-semibold leading-5 text-slate-800 dark:text-slate-300 print:inline-block sm:inline-block sm:text-base sm:leading-6">
           {school}
@@ -276,20 +322,20 @@ const EducationLine = ({ school, degree, dates }) => {
 
 const SkillsList = ({ title, skills }) => {
   return (
-    <div className=" mb-2 w-full flex-row text-slate-800 dark:text-slate-300 print:flex print:text-base sm:mb-0 sm:flex">
-      <span className="mr-2 w-28 shrink-0 whitespace-nowrap text-sm font-bold print:text-sm  sm:text-base">
+    <div className="mb-2 w-full flex-row text-slate-800 dark:text-slate-300 print:flex print:text-base sm:mb-0 sm:flex">
+      <p className="mr-2 inline-block w-28 shrink-0 whitespace-nowrap text-sm font-bold print:text-sm print:leading-4 sm:text-base">
         {title}:
-      </span>
-      <div className="flex flex-wrap">
+      </p>
+      <div className="lead flex flex-wrap">
         {skills.map((item, i) => {
           return (
-            <span
-              className="mr-1 whitespace-nowrap text-sm font-normal print:mr-2 sm:mr-2 sm:text-base"
+            <p
+              className="mr-1 inline-block whitespace-nowrap text-sm font-normal print:mr-1 print:leading-4 sm:mr-2 sm:text-base"
               key={i}
             >
               {item}
               {i < skills.length - 1 ? ',' : ''}
-            </span>
+            </p>
           )
         })}
       </div>
