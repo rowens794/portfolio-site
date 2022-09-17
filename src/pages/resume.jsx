@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 
 export default function Home() {
   const downloadResume = () => {
-    fetch('/anon-resume.pdf')
+    fetch('/resume.pdf')
       .then((resp) => resp.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(blob)
@@ -12,7 +12,7 @@ export default function Home() {
         a.style.display = 'none'
         a.href = url
         // the filename you want
-        a.download = 'Resume.pdf'
+        a.download = 'resume.pdf'
         document.body.appendChild(a)
         a.click()
         window.URL.revokeObjectURL(url)
