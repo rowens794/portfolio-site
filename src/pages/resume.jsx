@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ryan XXXX - Resume</title>
-        <meta name="description" content="Ryan XXXXX - Resume" />
+        <title>Ryan Owens - Resume</title>
+        <meta name="description" content="Ryan Owens - Resume" />
       </Head>
 
       <Container className="relative mt-12 print:mt-0" id="resume">
@@ -50,9 +50,9 @@ export default function Home() {
           </div>
 
           <div className="text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
-            <span>(XXX) XXX-XXXX</span>
+            <span>(304) 231-7428</span>
             <span className="mx-2">|</span>
-            <span>XXXXXXXX@gmail.com</span>
+            <span>rowens794@gmail.com</span>
           </div>
 
           <SectionHeading title="Skills / Competencies" />

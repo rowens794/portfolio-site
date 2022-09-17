@@ -9,7 +9,7 @@ export default function Headshot() {
           src="/images/headshot.png"
           width="290"
           height="200"
-          alt="Ryan XXXXXXX"
+          alt="Ryan Owens"
           className="m-auto -translate-y-6"
         />
       </div>
@@ -19,7 +19,7 @@ export default function Headshot() {
             src="/images/headshot.png"
             width="290"
             height="200"
-            alt="Ryan XXXXXX"
+            alt="Ryan Owens"
             className="mx-auto translate-y-3"
           />
         </div>
