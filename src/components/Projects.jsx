@@ -193,7 +193,7 @@ const Intellispect = () => {
             height={300}
             className=" contrast-more z-0 max-w-full mix-blend-darken grayscale transition duration-300 group-hover:grayscale-0 md:max-w-[600px]"
           />
-          <div className="absolute top-0 flex h-full w-full flex-col justify-center opacity-0 transition-all duration-300 group-hover:opacity-100 ">
+          <div className="absolute top-0 flex h-full w-full flex-col justify-center opacity-70 transition-all duration-300 group-hover:opacity-100 ">
             <button
               onClick={() => setShowVideo(true)}
               className="mx-auto w-48 rounded-full border border-teal-300 bg-teal-200 px-2 py-1 text-sm font-light text-teal-600 drop-shadow-lg"
@@ -349,7 +349,7 @@ const Zilch = () => {
             height={300}
             className=" contrast-more z-0 max-w-full mix-blend-darken grayscale transition duration-300 group-hover:grayscale-0 md:max-w-[600px]"
           />
-          <div className="absolute top-0 flex h-full w-full flex-col justify-center opacity-0 transition-all duration-300 group-hover:opacity-100 ">
+          <div className="absolute top-0 flex h-full w-full flex-col justify-center opacity-70 transition-all duration-300 group-hover:opacity-100 ">
             <button
               onClick={() => setShowVideo(true)}
               className="mx-auto w-48 rounded-full border border-teal-300 bg-teal-200 px-2 py-1 text-sm font-light text-teal-600 drop-shadow-lg"
@@ -392,7 +392,7 @@ const VanillaReddit = () => {
             height={300}
             className=" contrast-more z-0 max-w-full mix-blend-darken grayscale transition duration-300 group-hover:grayscale-0 md:max-w-[600px]"
           />
-          <div className="absolute top-0 flex h-full w-full flex-col justify-center opacity-0 transition-all duration-300 group-hover:opacity-100 ">
+          <div className="absolute top-0 flex h-full w-full flex-col justify-center opacity-70 transition-all duration-300 group-hover:opacity-100 ">
             <button
               onClick={() => setShowVideo(true)}
               className="mx-auto w-48 rounded-full border border-teal-300 bg-teal-200 px-2 py-1 text-sm font-light text-teal-600 drop-shadow-lg"
