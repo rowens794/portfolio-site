@@ -53,6 +53,10 @@ export default function Home() {
             <span>(304) 231-7428</span>
             <span className="mx-2">|</span>
             <span>rowens794@gmail.com</span>
+            <span className="mx-2">|</span>
+            <span>
+              <a href="https://github.com/rowens794">github.com/rowens794</a>
+            </span>
           </div>
 
           <SectionHeading title="Skills / Competencies" />
