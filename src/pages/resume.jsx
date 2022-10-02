@@ -40,23 +40,21 @@ export default function Home() {
           </h1>
 
           <div className="text-center  text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
-            <span className=" text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
-              Charleston, WV
-            </span>
-            <span className="mx-2">|</span>
-            <span>
-              <a href="https://www.ryanjowens.com">www.ryanjowens.com</a>
-            </span>
-          </div>
-
-          <div className="text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
             <span>(304) 231-7428</span>
             <span className="mx-2">|</span>
             <span>rowens794@gmail.com</span>
-            <span className="mx-2 hidden sm:inline-block">|</span>
+          </div>
+
+          <div className="text-center text-sm text-slate-800 dark:text-slate-300 print:text-xs print:leading-4">
+            <span>
+              <a href="https://www.ryanjowens.com">www.ryanjowens.com</a>
+            </span>
+            <span className="mx-2 hidden print:inline-block sm:inline-block">
+              |
+            </span>
             <span>
               <a
-                className="block sm:inline-block"
+                className="block print:inline-block sm:inline-block"
                 href="https://github.com/rowens794"
               >
                 github.com/rowens794
@@ -98,6 +96,9 @@ export default function Home() {
             ]}
           />
 
+          <SectionHeading title="Career Objective" />
+          <CareerObjective text="Motivated mid-career professional with extensive leadership and client management experience transitioning to software development. Looking to leverage strong soft and financial skills to become part of a team focused on building great products. Self-learner who has experience transforming ideas into products that have generated value for 10s of thousands of monthly visitors." />
+
           <SectionHeading title="Development Experience" />
           <Position
             titles={['Founder / Full Stack Developer']}
@@ -113,6 +114,7 @@ export default function Home() {
             ]}
           />
 
+          {/* 
           <SectionHeading title="Personal Projects" />
           <Project
             name="Zilch"
@@ -124,7 +126,7 @@ export default function Home() {
               'Game allows up to 8 players on separate devices to play inside of a private game room',
               'No user authentication is required to create or join a game',
             ]}
-          />
+          /> */}
 
           <SectionHeading title="Other Professional Experience" />
           <Position
@@ -133,9 +135,9 @@ export default function Home() {
             location="Charleston, WV"
             dates={['Sep 2016 – Jun 2020']}
             bullets={[
-              'Managed investment portfolios for nonprofit clients overseeing $750 million in assets',
-              'Built and maintained VBA application to fetch and analyze client investment allocations',
-              'Developed internal tooling to automate and streamline outside investment manager vetting process',
+              'Served as a team leader managing investment portfolios for nonprofit clients, overseeing $750 million in assets',
+              'Regularly hosted organization boards/committees and led discussions on investment strategy, performance, and client service',
+              'Developed internal tooling (Excel/VBA) to automate and streamline outside investment manager vetting and portfolio review process',
             ]}
           />
 
@@ -145,19 +147,10 @@ export default function Home() {
             location="Charleston, WV"
             dates={['Jun 2010 – Sep 2016']}
             bullets={[
-              'Coded VBA monte carlo simulation model to evaluate division wide investment allocations',
-              'Developed automated tooling to analyze and identify at-risk assets in the department',
-              'Managed a team of ~10 investment analysts and portfolio managers',
-            ]}
-          />
-
-          <Position
-            titles={['Grad. Teaching Ast.']}
-            company="West Virginia Univ."
-            location="Morgantown, WV"
-            dates={['Sep 2009 – Jun 2010']}
-            bullets={[
-              'Instructed a supplemental junior/senior level class on investment analysis and portfolio management',
+              'Managed an investment department of ten investment analysts and portfolio managers with responsibility for $1.5 billion in client assets',
+              'Oversaw division-wide portfolio construction process and incorporated innovative tooling to improve efficiency and accuracy of staff',
+              'Regularly interacted and documented due diligence meetings with 3rd party investment managers and conveyed findings to team and clients through written and verbal reports',
+              'Developed automated tooling (Excel/VBA) to analyze and identify at-risk assets in the department',
             ]}
           />
 
@@ -347,6 +340,16 @@ const SkillsList = ({ title, skills }) => {
           )
         })}
       </div>
+    </div>
+  )
+}
+
+const CareerObjective = ({ text }) => {
+  return (
+    <div className="ml-2 mt-2 print:mt-1 sm:ml-4">
+      <p className="flex gap-1 text-sm leading-5 text-slate-800 dark:text-slate-400 print:text-sm print:leading-4 sm:gap-2 sm:text-base sm:leading-6">
+        {text}
+      </p>
     </div>
   )
 }
