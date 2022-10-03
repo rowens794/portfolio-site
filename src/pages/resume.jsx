@@ -97,7 +97,7 @@ export default function Home() {
           />
 
           <SectionHeading title="Career Objective" />
-          <CareerObjective text="Motivated professional with extensive leadership and client management experience transitioning to software development. Looking to leverage strong soft and financial skills to become part of a team focused on building great products. Self-learner who has experience transforming ideas into products that have generated value for 10s of thousands of monthly visitors." />
+          <CareerObjective text="Motivated professional with extensive leadership and client management experience transitioning to software development. Looking to leverage strong soft skills and business background to become part of a team focused on building great products. Self-learner who has experience transforming ideas into products that have generated value for 10s of thousands of monthly visitors." />
 
           <SectionHeading title="Development Experience" />
           <Position
