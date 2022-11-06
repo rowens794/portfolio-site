@@ -62,68 +62,10 @@ export default function Home() {
             </span>
           </div>
 
-          <SectionHeading title="Professional Experience" />
-          <Position
-            titles={['Fixed Income Investment Officer']}
-            company="West Viriginia Investment Management Board"
-            location="Charleston, WV"
-            dates={['Dec 2022 – Present']}
-            bullets={[
-              'Served as the lead investment officer for the WVIMB’s fixed income portfolio, overseeing $4.0 billion in assets.',
-              'Accountable for oversight, deployment, and monitoring of fixed income strategies that are deployed across the WVIMB’s $22 billion portfolio.',
-              'Responsible for the identification, vetting and selection of external managers to deploy across the WVIMB’s fixed income portfolio.',
-            ]}
-          />
-          <Position
-            titles={['Founder / Full Stack Developer']}
-            company="Intellispect"
-            link="www.intellispect.co"
-            location="Charleston, WV"
-            dates={['Jun 2020 - Present']}
-            bullets={[
-              'Launched a SaaS product to help service providers identify nonprofits customers',
-              'Created a data aggregation pipeline with Node.js & Express to automate monthly collection, parsing, cleaning and storage of data for 1.7 million nonprofit organizations on MongoDB & AWS S3 ',
-              'Built React/Next.js frontend handling authentication, payment processing, and general application functionality',
-              'Grew the product to ~25k monthly visitors, thousands of registered users, generating $50k+ in revenue',
-            ]}
-          />
-          <Position
-            titles={['SVP & Inst. Inv. Manager']}
-            company="BB&T (now Truist Bank)"
-            location="Charleston, WV"
-            dates={['Sep 2016 – Jun 2020']}
-            bullets={[
-              'Served as a team leader managing investment portfolios for nonprofit clients, overseeing $750 million in assets',
-              'Regularly hosted organization boards/committees and led discussions on investment strategy, performance, and client service',
-              'Developed internal tooling (Excel/VBA) to automate and streamline outside investment manager vetting and portfolio review process',
-            ]}
-          />
+          <SectionHeading title="Career Objective" />
+          <CareerObjective text="Professional seeking to transition to a junior software development role after a history of success in finance.  Was the sole technical founder on a small team that built and launched a product that generates 25 thousand monthly visitors.  Excitied by the prospect of building great software to help customers achieve their goals." />
 
-          <Position
-            titles={['VP & Dir. of Inv.']}
-            company="United Bank, Inc."
-            location="Charleston, WV"
-            dates={['Jun 2010 – Sep 2016']}
-            bullets={[
-              'Worked closely with outside with >250 clients to help them achieve their investment goals',
-              'Oversaw division-wide portfolio construction process and incorporated innovative tooling to improve efficiency and accuracy of staff',
-              'Regularly interacted and documented due diligence meetings with 3rd party investment managers and conveyed findings to team and clients through written and verbal reports',
-              'Developed automated tooling (Excel/VBA) to analyze and identify at-risk assets in the department',
-            ]}
-          />
-
-          <SectionHeading title="Skills / Competencies" />
-          <SkillsList
-            title="Investment"
-            skills={[
-              'Manager Due Diligence',
-              'Asset Allocation',
-              'Portfolio Construction',
-              'Portfolio Monitoring',
-              'Performance Attribution',
-            ]}
-          />
-
+          <SectionHeading title="Skills" />
           <SkillsList
             title="Development"
             skills={[
@@ -146,9 +88,6 @@ export default function Home() {
           <SkillsList
             title="Software"
             skills={[
-              'Excel',
-              'Bloomberg',
-              'FactSet',
               'VS Code',
               'Git',
               'GitHub',
@@ -157,6 +96,65 @@ export default function Home() {
               'Trello',
               'Figma',
               'Adobe Creative Suite',
+            ]}
+          />
+
+          <SectionHeading title="Development Experience" />
+          <Position
+            titles={['Founder / Full Stack Developer']}
+            company="Intellispect"
+            link="www.intellispect.co"
+            location="Charleston, WV"
+            dates={['Jun 2020 - Present']}
+            bullets={[
+              'Sole technical founder on a team that built both front and backend to launch a service parsing and cataloging data on 1.7 million nonprofits in the US allowing our customers to identify and target potential prospects.',
+              'Responsible for application construction using modern web technologies such as React, Next.js, Node.js, Express, MongoDB, and TailwindCSS allowing for fast iteration and continous delivery of feature rollouts.',
+              'Designed and implemented a robust data pipeline that automates the collection of public data on nonprofits using technologies such as Node.js, Puppeteer.js, AWS S3, and MongoDB allowing our team to push updated data to our clients on a monthly basis.',
+
+              'Launched a SaaS product to help service providers identify nonprofits customers',
+              'Created a data aggregation pipeline with Node.js & Express to automate monthly collection, parsing, cleaning and storage of data for 1.7 million nonprofit organizations on MongoDB & AWS S3 ',
+              'Built React/Next.js frontend handling authentication, payment processing, and general application functionality',
+              'Grew the product to ~25k monthly visitors, thousands of registered users, generating $50k+ in revenue',
+            ]}
+          />
+
+          {/* 
+          <SectionHeading title="Personal Projects" />
+          <Project
+            name="Zilch"
+            desc="Multi-player Online Dice Game"
+            link="www.dontzilch.com"
+            github="github.com/rowens794/zilch"
+            bullets={[
+              'Real-time multi-player dice game using React, Next.js, Node.js, Express, and SQL',
+              'Game allows up to 8 players on separate devices to play inside of a private game room',
+              'No user authentication is required to create or join a game',
+            ]}
+          /> */}
+
+          <SectionHeading title="Other Professional Experience" />
+          <Position
+            titles={['SVP & Inst. Inv. Manager']}
+            company="BB&T (now Truist Bank)"
+            location="Charleston, WV"
+            dates={['Sep 2016 – Jun 2020']}
+            bullets={[
+              'Served as a team leader managing investment portfolios for nonprofit clients, overseeing $750 million in assets',
+              'Regularly hosted organization boards/committees and led discussions on investment strategy, performance, and client service',
+              'Developed internal tooling (Excel/VBA) to automate and streamline outside investment manager vetting and portfolio review process',
+            ]}
+          />
+
+          <Position
+            titles={['VP & Dir. of Inv.']}
+            company="United Bank, Inc."
+            location="Charleston, WV"
+            dates={['Jun 2010 – Sep 2016']}
+            bullets={[
+              'Worked closely with outside with >250 clients to help them achieve their investment goals',
+              'Oversaw division-wide portfolio construction process and incorporated innovative tooling to improve efficiency and accuracy of staff',
+              'Regularly interacted and documented due diligence meetings with 3rd party investment managers and conveyed findings to team and clients through written and verbal reports',
+              'Developed automated tooling (Excel/VBA) to analyze and identify at-risk assets in the department',
             ]}
           />
 

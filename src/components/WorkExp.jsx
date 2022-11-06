@@ -27,6 +27,17 @@ function BriefcaseIcon(props) {
 
 let resume = [
   {
+    company: 'WV Investment Management Board',
+    title: 'Fixed Income Portfolio Manager',
+    logo: '/images/wvimb.png',
+    start: '2022',
+    end: {
+      label: 'Present',
+      dateTime: new Date().getFullYear(),
+    },
+    id: 'wvimb',
+  },
+  {
     company: 'Intellispect',
     title: 'Founder / Lead Developer',
     logo: 'https://res.cloudinary.com/dfebwzrhb/image/upload/c_scale,w_85/v1627867566/logoOnly.png',

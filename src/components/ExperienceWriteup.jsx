@@ -2,6 +2,19 @@ import React, { useState } from 'react'
 
 const experiences = [
   {
+    company: 'WV Investment Management Board',
+    title: 'Fixed Income Investment Officer',
+    dates: '2022 - Present',
+    targetID: 'wvimb',
+    desc: [
+      'In late 2022, I stepped into a role overseeing fixed income allocations for the West Virginia Investment Management Board.  This organization oversees ~$20 billion of assets that are invested on behalf of employees of the state of West Virginia.',
+      'In this role, I have responsibility over manager and allocation decisions across $4 billion in fixed income assets.',
+      'On a day to day basis, I serve as the point person for establishing a deep understanding of the strategies that outside managers are using, incorporating analysis and feedback from outside investment consultants, and reporting portfolio performance and investment commentary to stakeholders/trustees of the assets.',
+    ],
+    id: 'wvimb-wu',
+    matchId: 'wvimb',
+  },
+  {
     company: 'Intellispect',
     title: 'Founder / Product Lead',
     dates: '2020 - Present',
@@ -18,7 +31,7 @@ const experiences = [
   },
   {
     company: 'BB&T (Truist)',
-    title: 'Investment Manager',
+    title: 'Institutional Investment Manager',
     dates: '2016 - 2020',
     targetID: 'bbt',
     desc: [

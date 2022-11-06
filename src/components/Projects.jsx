@@ -47,8 +47,8 @@ export default function Projects() {
       </h2>
       <hr className="relative z-0 -translate-y-4 border border-teal-500" />
       <Intellispect />
-      <Zilch />
-      <VanillaReddit />
+      {/* <Zilch />
+      <VanillaReddit /> */}
     </div>
   )
 }

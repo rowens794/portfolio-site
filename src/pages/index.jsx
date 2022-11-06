@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import { Container } from '@/components/Container'
 import Projects from '@/components/Projects'
+import MyThoughts from '@/components/My Thoughts'
 import { Work } from '@/components/WorkExp'
 import { Education } from '@/components/Education'
 import { OtherExp } from '@/components/OtherExperience'
@@ -14,10 +15,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ryan Owens - Web Developer</title>
+        <title>Ryan Owens</title>
         <meta
           name="description"
-          content="I’m Ryan, a software developer based in Charleston, WV."
+          content="I’m Ryan, an investor/software developer based in Charleston, WV."
         />
       </Head>
 
@@ -25,8 +26,8 @@ export default function Home() {
         <Hero />
       </Container>
 
-      <Container className="mt-12">
-        <PreferredTech />
+      <Container className="mt-24" id="projects">
+        <MyThoughts />
       </Container>
 
       <Container className="mt-24" id="projects">
@@ -48,6 +49,10 @@ export default function Home() {
             <OtherExp />
           </div>
         </div>
+      </Container>
+
+      <Container className="mt-12">
+        <PreferredTech />
       </Container>
     </>
   )

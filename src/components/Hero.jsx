@@ -23,10 +23,11 @@ export function Hero() {
           (304) 231-7428 | rowens794@gmail.com
         </span>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I spent a decade in banking until I discovered that I love building
-          products on the web. I&apos;m currently running a small project that
-          makes it easy for people to find nonprofit organizations - Now
-          I&apos;m looking for something new.
+          I love thinking about how what is going on in the world today will
+          shape what happens tomorrow. I&apos;ve spent most of my career in
+          investment related roles, but I&apos;m also an avid software developer
+          who gets exciting about building tools that help people better
+          understand the world around them.
         </p>
         <div className="mt-6 flex gap-3">
           <SocialLink
