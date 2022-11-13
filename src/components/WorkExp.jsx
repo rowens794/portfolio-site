@@ -27,8 +27,8 @@ function BriefcaseIcon(props) {
 
 let resume = [
   {
-    company: 'WV Investment Management Board',
-    title: 'Fixed Income Portfolio Manager',
+    company: 'WV Invst. Man. Board',
+    title: 'Fixed Inc. Inv. Officer',
     logo: '/images/wvimb.png',
     start: '2022',
     end: {
