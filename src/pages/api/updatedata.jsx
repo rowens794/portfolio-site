@@ -7,30 +7,14 @@ const client = new MongoClient(process.env.MONGO, {
 })
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    try {
-      const { authorization } = req.headers
+  await client.connect()
 
-      if (authorization === `Bearer ${process.env.BLS_KEY}`) {
-        await client.connect()
-        const db = client.db()
+  let dataseries = await retrieveBLSDataSeries()
+  let documents = await createBLSDocuments(dataseries)
+  await addDataPoints(client, documents)
+  client.close()
 
-        let dataseries = await retrieveBLSDataSeries()
-        let documents = await createBLSDocuments(dataseries)
-        await addDataPoints(client, documents)
-        client.close()
-
-        res.status(200).json({ success: true })
-      } else {
-        res.status(401).json({ success: false })
-      }
-    } catch (err) {
-      res.status(500).json({ statusCode: 500, message: 'error' })
-    }
-  } else {
-    res.setHeader('Allow', 'POST')
-    res.status(405).end('Method Not Allowed')
-  }
+  res.status(200).json({ success: true })
 }
 
 const addDataPoints = async (client, documents) => {
