@@ -2,15 +2,8 @@ import Head from 'next/head'
 import { createClient } from 'next-sanity'
 
 import { Container } from '@/components/Container'
-import Projects from '@/components/Projects'
-import MyThoughts from '@/components/My Thoughts'
-import { Work } from '@/components/WorkExp'
-import { Education } from '@/components/Education'
-import { OtherExp } from '@/components/OtherExperience'
-import { PreferredTech } from '@/components/PreferredTech'
+import MyThoughts from '@/components/MyThoughts'
 import { Hero } from '@/components/ArticleHeader'
-import { DownloadCV } from '@/components/DownloadCV'
-import { ExperienceWriteup } from '@/components/ExperienceWriteup'
 
 export default function Home(posts) {
   return (
@@ -27,7 +20,7 @@ export default function Home(posts) {
         <Hero />
       </Container>
 
-      <Container className="mt-24" id="articles">
+      <Container className="mt-12" id="articles">
         <MyThoughts posts={posts.posts} />
       </Container>
     </>

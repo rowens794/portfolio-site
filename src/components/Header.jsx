@@ -129,12 +129,12 @@ function DesktopNavigation(props) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/">Me</NavItem>
-        <NavItem href="/#projects">Projects</NavItem>
-        <NavItem href="/#experience">Experience</NavItem>
+        <NavItem href="/articles">My Thoughts</NavItem>
+        <NavItem href="/interactive-data">Interactive Data</NavItem>
         <NavItem href="https://github.com/rowens794" target="_blank">
           GitHub
         </NavItem>
-        <NavItem href="/resume">Resume</NavItem>
+        {/* <NavItem href="/resume">Resume</NavItem> */}
       </ul>
     </nav>
   )

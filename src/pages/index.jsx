@@ -3,7 +3,7 @@ import { createClient } from 'next-sanity'
 
 import { Container } from '@/components/Container'
 import Projects from '@/components/Projects'
-import MyThoughts from '@/components/My Thoughts'
+import MyThoughts from '@/components/MyThoughts'
 import { Work } from '@/components/WorkExp'
 import { Education } from '@/components/Education'
 import { OtherExp } from '@/components/OtherExperience'
@@ -44,7 +44,7 @@ export default function Home(posts) {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <ExperienceWriteup />
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <DownloadCV />
+            {/* <DownloadCV /> */}
             <Work />
             <Education />
             <OtherExp />

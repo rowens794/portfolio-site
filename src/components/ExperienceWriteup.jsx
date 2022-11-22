@@ -60,18 +60,18 @@ const experiences = [
     id: 'unitedbank-wu',
     matchId: 'unitedbank',
   },
-  {
-    company: 'WVU',
-    title: 'Teaching Assistant',
-    dates: '2009-2010',
-    targetID: 'wvu',
-    desc: [
-      'While in graduate school, I taught a junior/senior-level seminar on investment analysis.',
-      'The content of the class focused on analyzing and valuing different types of investment securities.  However, the course provided me with education by fire in public speaking, preparing for presentations under tight deadlines, and having difficult conversations with people about their performance.',
-    ],
-    id: 'wvu-wu',
-    matchId: 'wvu',
-  },
+  // {
+  //   company: 'WVU',
+  //   title: 'Teaching Assistant',
+  //   dates: '2009-2010',
+  //   targetID: 'wvu',
+  //   desc: [
+  //     'While in graduate school, I taught a junior/senior-level seminar on investment analysis.',
+  //     'The content of the class focused on analyzing and valuing different types of investment securities.  However, the course provided me with education by fire in public speaking, preparing for presentations under tight deadlines, and having difficult conversations with people about their performance.',
+  //   ],
+  //   id: 'wvu-wu',
+  //   matchId: 'wvu',
+  // },
 ]
 
 export function ExperienceWriteup() {
