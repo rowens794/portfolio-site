@@ -21,7 +21,7 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      {!process.env.MAINTAINANCE_MODE ? (
+      {!process.env.MAINTAINANCE_MODE === 'true' ? (
         <>
           <div className="fixed inset-0 flex justify-center sm:px-8">
             <div className="flex w-full max-w-7xl lg:px-8">
